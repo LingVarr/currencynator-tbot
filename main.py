@@ -38,7 +38,7 @@ async def get_cur_usd(message: types.Message):
 
 @disp.message_handler(text=['Евро (€) - EUR'])
 async def get_cur_eur(message: types.Message):
-    eur_get = data['Valute']['USD']['Value']
+    eur_get = data['Valute']['EUR']['Value']
     await message.reply(f'Курс Евро: {eur_get}₽', reply_markup=keyb_fiat)
 
 
