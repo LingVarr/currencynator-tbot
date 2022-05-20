@@ -67,9 +67,9 @@ async def get_cur_cny(message: types.Message):
 
 
 @disp.message_handler(text=['Белорусский рубль (Br) - BYN'])
-async def get_cur_jpy(message: types.Message):
-    bny_get = data['Valute']['BNY']['Value']
-    await message.reply(f'Курс Бел. рубля: {bny_get}₽', reply_markup=keyb_fiat)
+async def get_cur_byn(message: types.Message):
+    byn_get = data['Valute']['BYN']['Value']
+    await message.reply(f'Курс Бел. рубля: {byn_get}₽', reply_markup=keyb_fiat)
 
 
 @disp.message_handler(text=['Украинская гривна (₴) - UAH'])
@@ -85,9 +85,9 @@ async def get_cur_kzt(message: types.Message):
 
 
 @disp.message_handler(text=['Фунт стерлингов СК (£) - GBP'])
-async def get_cur_gdp(message: types.Message):
-    gdp_get = data['Valute']['GDP']['Value']
-    await message.reply(f'Курс Фунта стерлингов: {gdp_get}₽', reply_markup=keyb_fiat)
+async def get_cur_gbp(message: types.Message):
+    gbp_get = data['Valute']['GBP']['Value']
+    await message.reply(f'Курс Фунта стерлингов: {gbp_get}₽', reply_markup=keyb_fiat)
 
 
 # Кнопки, показывающий курс выбранной Криптовалюты при нажатии:
