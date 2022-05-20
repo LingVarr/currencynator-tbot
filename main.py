@@ -68,8 +68,8 @@ async def get_cur_cny(message: types.Message):
 
 @disp.message_handler(text=['Белорусский рубль (Br) - BYN'])
 async def get_cur_jpy(message: types.Message):
-    jpy_get = data['Valute']['JPY']['Value']
-    await message.reply(f'Курс Иена: {jpy_get}₽', reply_markup=keyb_fiat)
+    bny_get = data['Valute']['BNY']['Value']
+    await message.reply(f'Курс Бел. рубля: {bny_get}₽', reply_markup=keyb_fiat)
 
 
 @disp.message_handler(text=['Украинская гривна (₴) - UAH'])
